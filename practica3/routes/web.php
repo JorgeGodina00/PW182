@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 */
 
-Route::view('/', 'welcome');
-Route::view('/formulario', 'formulario');
-Route::view('/recuerdos', 'recuerdos');
+Route::view('/', 'welcome')->name('apodoInicio');
+Route::view('/formulario', 'formulario')->name('apodoFormulario');
+Route::view('/recuerdos', 'recuerdos')->name('apodoRecuerdos');
 
