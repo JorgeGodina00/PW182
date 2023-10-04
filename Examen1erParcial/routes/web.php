@@ -15,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'inicio')->name('apodoInicio');
 Route::view('/vista1', 'Vista1')->name('apodoVista1');
-Route::view('/vista2', 'Vista2')->name('apodoVista2');
-Route::view('/vista3', 'Vista3')->name('apodoVista3');
+Route::get('/vista2', function () {
+    return view('vista2');
+});
+Route::get('/vista3', function () {
+    return view('vista3');
+});

@@ -9,7 +9,7 @@
 <body>
     @extends('layouts.plantilla')
     @section('titulo')
-    <h2 class='text-center'>Inicio</h2><br/>
+    <h1 class="center-text">Inicio</h1>
     @endsection
     @section('contenido')
         <div class="card">

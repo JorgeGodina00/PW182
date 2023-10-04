@@ -12,6 +12,7 @@
 </head>
 <body>
     @include('partials.scrollby')
+    @yield('titulo')
     @yield('contenido')
 
 </body>

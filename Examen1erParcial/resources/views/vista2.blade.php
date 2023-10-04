@@ -8,6 +8,12 @@
 </head>
 <body>
     @extends('layouts.plantilla')
+    @section('titulo')
+    <center>
+        <h1>Vista 2</h1>
+    </center>
+    @endsection
+    @section('contenido')
     @section('contenido')
     <center>
         <div class="spinner-border text-primary" role="status">
