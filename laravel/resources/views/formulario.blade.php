@@ -17,12 +17,36 @@
     @endsection
 
     @section('contenido')
-    <center>
-        <h1 class=" display-1 text-center text-danger mt-5">Esto es un Formulario</h1>
-    </center>
 
-     
+    <div class="container mt-5 col-md-6">
+        <center>
+            <h1 class=" display-1 text-center text-danger mt-5">Esto es un Formulario</h1>
+    
+            <div class="card text-center">
+                <div class="card-header">
+                  Introduce tus Recuerdos:
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                          <label class="form-label">Titulo</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label">Recuerdo:</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  2 days ago
+                </div>
+              </div>
+        </center>
+    </div>
 
+    
     @endsection
 </body>
 </html>

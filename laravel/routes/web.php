@@ -24,3 +24,14 @@ Route::get('/', function () {
 Route::get('/',[diarioController::class, 'metodoInicio'])->name('apodoInicio');
 Route::get('/formulario',[diarioController::class, 'metodoFormulario'])->name('apodoFormulario');
 Route::get('/recuerdo',[diarioController::class, 'metodoRecuerdo'])->name('apodoRecuerdo');
+Route::post('/GuardarRecuerdo',[diarioController::class, 'metodoGuardar'])->name('guardar');
+
+/*
+//Rutas Agrupadas tipo controlador
+
+Route::controller(diarioController::class)->group(function(){
+    Route::get('/', 'metodoInicio')->name('apodoInicio');
+    Route::get('/formulario', 'metodoFormulario')->name('apodoFormulario');
+    Route::get('/recuerdos', 'metodoRecuerdo')->name('apodoRecuerdo');
+});
+*/
