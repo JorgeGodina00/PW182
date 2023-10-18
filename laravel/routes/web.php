@@ -24,7 +24,7 @@ Route::get('/', function () {
 Route::get('/',[diarioController::class, 'metodoInicio'])->name('apodoInicio');
 Route::get('/formulario',[diarioController::class, 'metodoFormulario'])->name('apodoFormulario');
 Route::get('/recuerdo',[diarioController::class, 'metodoRecuerdo'])->name('apodoRecuerdo');
-Route::post('/GuardarRecuerdo',[diarioController::class, 'metodoGuardar'])->name('guardar');
+Route::post('/guardarRecuerdo',[diarioController::class, 'metodoGuardar'])->name('guardar');
 
 /*
 //Rutas Agrupadas tipo controlador

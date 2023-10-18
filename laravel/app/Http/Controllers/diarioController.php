@@ -17,4 +17,11 @@ class diarioController extends Controller
         return view('recuerdos');
     }
 
+    public function metodoGuardar(Request $req){
+        echo"<p>";
+            echo $req->path();
+            echo $req->method();
+        echo"</p>";
+    }
+
 }
